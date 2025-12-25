@@ -13,8 +13,8 @@ def plot_commits_per_month(series):
 def plot_top_authors(series):
     series.plot(kind='bar')
     plt.title('Top Authors by Number of Commits')
-    plt.ylabel('Author')
-    plt.xlabel('Commits')
+    plt.xlabel('Author')
+    plt.ylabel('Commits')
     plt.tight_layout()
     plt.savefig("plot_top_authors.png")
     plt.show()

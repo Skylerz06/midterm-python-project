@@ -7,7 +7,7 @@ from src.visualization import (
     plot_bugfix_ratio
 )
 
-DATA_PATH = './midterm/project/data/commit_20000.csv'
+DATA_PATH = './data/commit_20000.csv'
 
 def main():
     df = load_and_clean_data(DATA_PATH)

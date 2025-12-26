@@ -7,7 +7,7 @@ from src.visualization import (
     plot_commit_type_ratio,
 )
 
-DATA_PATH = './data/commit_20000.csv'
+DATA_PATH = './project/data/sampled.csv'
 
 def main():
     df = load_and_clean_data(DATA_PATH)

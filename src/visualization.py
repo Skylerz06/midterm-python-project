@@ -20,11 +20,11 @@ def plot_top_authors(series):
     plt.show()
 
 
-def plot_bugfix_ratio(series):
+def plot_commit_type_ratio(series):
     series.plot(kind='pie', autopct='%1.1f%%')
-    plt.title('Bugfix vs Other Commits')
+    plt.title('Commits Type Ratio')
     plt.ylabel('')
     plt.tight_layout()
-    plt.savefig("plot_bugfix_ratio.png")
+    plt.savefig("plot_commit_type_ratio.png")
     plt.show()
 

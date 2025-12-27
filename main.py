@@ -17,10 +17,14 @@ from src.visualization import (
 )
 
 DATA_PATH = './project/data/sampled.csv'
+# đổi path nếu cần
 
 def main():
     df = load_and_clean_data(DATA_PATH)
 
+    print(df.head())
+    df.info()
+    print('\n')
 
     commits_month = commits_per_month(df)
     authors = top_authors(df)
